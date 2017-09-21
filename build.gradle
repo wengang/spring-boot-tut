@@ -13,8 +13,8 @@ buildscript {
 		jjwtVersion = '0.7.0'
 	}
 	repositories {
-        jcenter()
-//        maven {url "http://maven.aliyun.com/nexus/content/repositories/central/"}
+//        jcenter()
+		maven { url 'http://maven.aliyun.com/mvn/repository/' }
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -42,8 +42,8 @@ jar {
 repositories {
     // 使用 'jcenter' 作为中心仓储查询解析你的项目依赖。
     // 你可以声明任何 Maven/Ivy/file 类型的依赖类库仓储位置
-    jcenter()
-//    maven {url "http://maven.aliyun.com/nexus/content/repositories/central/"}
+//    jcenter()
+	maven { url 'http://maven.aliyun.com/mvn/repository/' }
 }
 
 // 在这个段落中你可以声明源文件和目标编译后的Java版本兼容性
