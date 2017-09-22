@@ -17,7 +17,7 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:4200");
+        config.addAllowedOrigin("http://localhost:8082");
         config.addAllowedOrigin("https://www.getpostman.com");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
